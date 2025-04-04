@@ -21,11 +21,13 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ClientFormComponent {
 
-  @Input() client: ClientModelForm = { id: 0, name: '', email: '', phone: '' }
+  @Input() client: ClientModelForm = { id: 0, name: '', email: '', phone: '' };
 
   @Output() clientSubmited = new EventEmitter<ClientModelForm>();
 
-  onSubmit(_: NgForm){
-    this.clientSubmited.emit(this.client)
+  onSubmit(form: NgForm) {
+    this.clientSubmited.emit(this.client);
+    console.log('Formulário enviado:', form.value);
   }
+
 }

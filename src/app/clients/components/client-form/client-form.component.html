@@ -5,7 +5,7 @@
               <mat-label>Nome</mat-label>
               <input matInput name="name" id="name" #nameModel="ngModel" [(ngModel)]="client.name" required>
               @if (nameModel.hasError('required')){
-              <mat-error>Informe o nome do client</mat-error>
+              <mat-error>Informe o nome do cliente</mat-error>
               }
           </mat-form-field>
       </div>
@@ -16,7 +16,7 @@
                   <mat-label>E-mail</mat-label>
                   <input matInput name="email" id="email" #emailModel="ngModel" [(ngModel)]="client.email" required
                       email>
-                  @if (nameModel.hasError('required') || nameModel.hasError('email')){
+                  @if (emailModel.hasError('required') || emailModel.hasError('email')){
                   <mat-error>Informe um email válido para o cliente</mat-error>
                   }
               </mat-form-field>
@@ -27,7 +27,7 @@
                   <input matInput name="phone" id="phone" #phoneModel="ngModel" [(ngModel)]="client.phone" required
                       mask="(00) 00000-0000">
                   @if (nameModel.hasError('required') || nameModel.hasError('mask')){
-                  <mat-error>Informe o nome do client</mat-error>
+                  <mat-error>Informe o nome do cliente</mat-error>
                   }
               </mat-form-field>
           </div>
@@ -35,7 +35,7 @@
 
       <div class="row">
           <div class="col div-button">
-              <button type="submit" mat-flat-button [disabled]="form.invalid">Salvar</button>
+              <button type="submit" >Salvar</button>
           </div>
       </div>
 
