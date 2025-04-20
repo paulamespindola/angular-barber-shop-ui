@@ -1,0 +1,23 @@
+.footer-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  background-color: #D9D9D9;
+  max-height: 2rem;
+  font-size: 0.87rem;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+img{
+  width: 1.3rem;
+}
+

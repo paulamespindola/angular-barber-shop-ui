@@ -79,11 +79,12 @@ export class ScheduleCalendarComponent implements OnDestroy, AfterViewInit, OnCh
 
   set selected(selected: Date) {
     if (this._selected.getTime() !== selected.getTime()) {
+      this._selected = selected
       this.onDateChange.emit(selected)
       this.buildTable()
-      this._selected = selected
     }
   }
+
 
   ngOnDestroy(): void {
     if (this.subscription) {

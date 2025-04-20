@@ -1,17 +1,39 @@
-.row{
+
+.wrapper {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+
 }
 
-.fil-col{
+.container {
+  width: 100%;
+  max-width: 600px; // ou 700px, 800px, você escolhe
+  padding: 2rem;
+
+}
+
+.fil-col {
   width: 100%;
 }
 
-.div-button{
+.div-button {
   padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.custom-button {
+  background-color: #477183;
+  color: white;
+
+  &:hover {
+    background-color: darken(#477183, 10%);
+  }
+
+  &:disabled {
+    background-color: lighten(#477183, 15%);
+    color: #ccc;
+  }
+}
+

@@ -1,5 +1,7 @@
-<app-card-header>{{ title }}</app-card-header>
+<div class="content">
+  <app-card-header>{{ title }}</app-card-header>
+  <app-menu-bar></app-menu-bar>
+  <router-outlet></router-outlet>
+</div>
 
-<app-menu-bar></app-menu-bar>
-
-<router-outlet />
+<app-footer></app-footer>

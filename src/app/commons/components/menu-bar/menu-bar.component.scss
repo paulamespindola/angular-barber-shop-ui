@@ -2,14 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  background-color: #C82D33;
 }
 
 ::ng-deep .menu-title {
   font-size: 24px;
   font-weight: bold;
-  padding: 8px 16px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  color: #E5E0E0;
 }
